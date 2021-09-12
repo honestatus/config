@@ -1,0 +1,6 @@
+name: Google
+url: https://google.com/
+checks:
+  - id: website
+    name: Website
+    web_url: https://www.google.com/

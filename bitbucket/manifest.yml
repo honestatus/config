@@ -1,0 +1,10 @@
+name: Bitbucket
+url: https://bitbucket.org/
+status_page_url: https://bitbucket.status.atlassian.com/
+checks:
+  - id: website
+    name: Website
+    web_url: https://bitbucket.org/
+  - id: website_repo_source
+    name: Repository Source
+    web_url: https://bitbucket.org/atlassian_tutorial/helloworld/src/master/

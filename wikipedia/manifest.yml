@@ -1,0 +1,9 @@
+name: Wikipedia
+url: https://www.wikipedia.org/
+checks:
+  - id: website
+    name: Website
+    web_url: https://www.wikipedia.org/
+  - id: mainpage_en
+    name: MainPage EN
+    web_url: https://en.wikipedia.org/wiki/Main_Page

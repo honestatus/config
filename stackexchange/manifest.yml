@@ -1,0 +1,16 @@
+name: Stack Exchange
+url: https://stackexchange.com/
+status_page_url: https://stackstatus.net/
+checks:
+  - id: stackoverflow_website
+    name: Stack Overflow
+    web_url: https://stackoverflow.com/
+  - id: stackoverflow_question
+    name: Stack Overflow Question Access
+    web_url: https://stackoverflow.com/questions/11828270/how-do-i-exit-the-vim-editor
+  - id: serverfault_homepage
+    name: Server Fault
+    web_url: https://serverfault.com/
+  - id: serverfault_question
+    name: Server Fault Question Access
+    web_url: https://serverfault.com/questions/1/how-to-exclude-indexes-from-backups-in-sql-server-2008

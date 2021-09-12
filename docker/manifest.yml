@@ -1,0 +1,7 @@
+name: Docker
+url: https://www.docker.com/
+status_page_url: https://status.docker.com/
+checks:
+  - id: website
+    name: Docker Web Site
+    web_url: https://www.docker.com/

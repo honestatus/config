@@ -1,0 +1,40 @@
+name: GitHub
+url: https://github.com/
+status_page_url: https://www.githubstatus.com/
+checks:
+  - id: website
+    name: GitHub Website
+    web_url: https://github.com/
+  - id: api_root
+    name: GitHub API
+    status_page_item: API Requests
+    http_url: https://api.github.com/
+    headers:
+      Authorization: "token {{secret.GITHUB_TOKEN}}"
+  - id: api_rest_repo
+    name: GitHub API - Get Repo
+    status_page_item: API Requests
+    http_url: https://api.github.com/repos/octocat/Hello-World
+    headers:
+      Authorization: "token {{secret.GITHUB_TOKEN}}"
+  - id: api_rest_issue
+    name: GitHub API - Get Issue
+    status_page_item: API Requests
+    http_url: https://api.github.com/repos/octocat/Hello-World/issues/7
+    headers:
+      Authorization: "token {{secret.GITHUB_TOKEN}}"
+  - id: api_rest_pull_request
+    name: GitHub API - Get Issue
+    status_page_item: API Requests
+    http_url: https://api.github.com/repos/octocat/Hello-World/pulls/1
+    headers:
+      Authorization: "token {{secret.GITHUB_TOKEN}}"
+  - id: website_issue
+    name: GitHub Issues Access
+    web_url: https://github.com/octocat/Hello-World/issues/7
+  - id: website_pull_request
+    name: GitHub Pull Request Access
+    web_url: https://github.com/octocat/Hello-World/pull/1
+  - id: git_clone_https
+    name: GitHub Clone HTTPS
+    docker: git_clone_https
