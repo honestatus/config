@@ -6,7 +6,8 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest    steps:
+    runs-on: ubuntu-latest    
+    steps:
       - uses: actions/checkout@v2
       - name: Download import bin
         run: wget -O /tmp/import https://s3.us-east-2.wasabisys.com/honestatus-bin/import && chmod 755 /tmp/import
