@@ -9,9 +9,7 @@ jobs:
     runs-on: ubuntu-latest    
     steps:
       - uses: actions/checkout@v2
-      - name: Download import bin
-        run: wget -O /tmp/import https://s3.us-east-2.wasabisys.com/honestatus-bin/import && chmod 755 /tmp/import
       - name: Run import
-        run: /tmp/import
+        run: /usr/local/bin/control
         env:
           DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
