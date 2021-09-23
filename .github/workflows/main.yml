@@ -10,6 +10,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Run import
-        run: /usr/local/bin/control
+        run: /usr/local/bin/import
         env:
           DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
